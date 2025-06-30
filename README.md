@@ -1,4 +1,4 @@
-# Emulainador – Proyecto Full Stack con Node.js + Express + MongoDB
+# Emulainador – Proyecto con Node.js + Express + MongoDB
 
 Este proyecto permite gestionar usuarios y lanzar juegos desde html con Emulatorjs, con carga automática de datos para los usuarios desde un archivo JSON. Ideal para uso local o en Docker.
 
