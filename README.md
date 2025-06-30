@@ -77,7 +77,7 @@ EMULAINADOR/                                             # Carpeta raíz del pro
    ```
 
 4. **Carga usuarios desde JSON**
-   Al arrancar el servidor, se importan automáticamente los usuarios definidos en `bd_usuarios/usuarios.json` si la colección está vacía.
+   Al arrancar el servidor, se importan automáticamente los usuarios definidos en `models/usuarios.json` si la colección está vacía.
 
 5. **Inicia el servidor**
 
@@ -131,7 +131,7 @@ En el apartado `scripts` de tu `package.json` encontrarás:
 
 * **Express** para rutas REST y servir archivos estáticos.
 * **Mongoose** para modelar `Usuario` y `Juego`.
-* **Carga inicial de datos**: los usuarios se importan desde `bd_usuarios/usuarios.json`.
+* **Carga inicial de datos**: los usuarios se importan desde `models/usuarios.json`.
 * **Docker Compose** levanta MongoDB sin autenticación, exponiendo puerto 27017.
 
 ---
