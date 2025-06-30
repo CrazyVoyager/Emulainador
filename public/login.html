@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Login - Retro Consolas</title>
+  <link rel="stylesheet" href="css/loginstyles.css">
+</head>
+<body>
+  <div class="login-container">
+    <h1>🔒 Iniciar Sesión</h1>
+    <form id="loginForm">
+      <input type="text" id="usuario" placeholder="Usuario" value="admin" required>
+      <input type="password" id="contrasena" value="admin123" placeholder="Contraseña" required>
+      <button type="submit">Ingresar</button>
+    </form>
+    <p id="mensajeError" style="color: red; display: none;">Usuario o contraseña incorrectos</p>
+  </div>
+
+  <script>
+    document.getElementById("loginForm").addEventListener("submit", async function(e) {
+      e.preventDefault();
+      
+      const usuario = document.getElementById("usuario").value;
+      const contrasena = document.getElementById("contrasena").value;
+      
+      try {
+        const response = await fetch("http://localhost:3000/api/login", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify({ usuario, contrasena })
+        });
+        
+        const data = await response.json();
+        
+        if (data.exito) {
+          localStorage.setItem("usuarioAutenticado", "true");
+          window.location.href = "index.html";
+        } else {
+          document.getElementById("mensajeError").style.display = "block";
+        }
+      } catch (error) {
+        console.error("Error:", error);
+        document.getElementById("mensajeError").style.display = "block";
+      }
+    });
+  </script>
+</body>
+</html>

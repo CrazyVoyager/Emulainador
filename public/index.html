@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Emulainador</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  
+</head>
+<body>
+
+  <header>
+    <h1>🎮 Emulainador</h1>
+    <input type="text" id="buscador" placeholder="Buscar juegos..." />
+  </header>
+
+  <nav id="filtros">
+  <button class="active" data-filtro="Todos">Todos</button>
+  <button data-filtro="NES">NES</button>
+  <button data-filtro="SNES">SNES</button>
+  <button data-filtro="GBA">GBA</button>
+  <button data-filtro="PS1">PlayStation</button>
+  <button data-filtro="N64">Nintendo 64</button>
+</nav>
+
+  <div class="orden-botones">
+    <button id="ordenAlfabeticoAsc" class="active">Ordenar A-Z &#9650;</button>
+    <button id="ordenAlfabeticoDesc">Ordenar Z-A &#9660;</button>
+  </div>
+
+  <main id="contenedor-juegos">
+    <div class="card" data-consola="SNES">
+      <img src="../public/img_juegos/snes/super mario world.jpg" alt="Super Mario World">
+      <div class="titulo">Super Mario World</div>
+      <button onclick="window.location.href='../public/juegos/SNES/supermarioworld.html'">Jugar</button>
+    </div>
+
+   <div class="card" data-consola="SNES">
+      <img src="../public/img_juegos/SNES/f-zero.webp" alt="F-Zero">
+      <div class="titulo">F-Zero</div>
+      <button onclick="window.location.href='../public/juegos/SNES/fzero.html'">Jugar</button>
+    </div>
+
+    <div class="card" data-consola="SNES">
+      <img src="../public/img_juegos/SNES/kirby super star.png" alt="Kirby Super Star">
+      <div class="titulo">Kirby Super Star</div>
+      <button onclick="window.location.href='../public/juegos/SNES/kirbysuperstar.html'">Jugar</button>
+    </div>
+
+    <div class="card" data-consola="SNES">
+      <img src="../public/img_juegos/SNES/Super Metroid.webp" alt="Super Metroid">
+      <div class="titulo">Super Metroid</div>
+      <button onclick="window.location.href='../public/juegos/SNES/supermetroid.html'">Jugar</button>
+    </div>
+
+    <div class="card" data-consola="SNES">
+      <img src="../public/img_juegos/SNES/link to the past.jpg" alt="Zelda: Link to the Past">
+      <div class="titulo">Zelda: Link to the Past</div>
+      <button onclick="window.location.href='../public/juegos/SNES/zeldalinktothepast.html'">Jugar</button>
+    </div>
+
+    <div class="card" data-consola="SNES">
+      <img src="../public/img_juegos/SNES/super bomberman.webp" alt="Super Bomberman">
+      <div class="titulo">Super Bomberman</div>
+      <button onclick="window.location.href='../public/juegos/SNES/superbomberman.html'">Jugar</button>
+    </div>
+
+    <div class="card" data-consola="SNES">
+      <img src="../public/img_juegos/SNES/super mario kart.jpg" alt="Super Mario Kart">
+      <div class="titulo">Super Mario Kart</div>
+      <button onclick="window.location.href='../public/juegos/SNES/supermariokart.html'">Jugar</button>
+    </div>
+
+    <div class="card" data-consola="SNES">
+      <img src="../public/img_juegos/SNES/street fighter II.png" alt="Street Fighter 2">
+      <div class="titulo">Street Fighter 2</div>
+      <button onclick="window.location.href='../public/juegos/SNES/streetfighter2.html'">Jugar</button>
+    </div>
+
+    <div class="card" data-consola="SNES">
+      <img src="../public/img_juegos/SNES/super mario rpg.webp" alt="Super Mario RPG">
+      <div class="titulo">Super Mario RPG</div>
+      <button onclick="window.location.href='../public/juegos/SNES/supermariorpg.html'">Jugar</button>
+    </div>
+
+    <div class="card" data-consola="SNES">
+      <img src="../public/img_juegos/SNES/super punch out.jpg" alt="Super Punch-Out">
+      <div class="titulo">Super Punch-Out</div>
+      <button onclick="window.location.href='../public/juegos/SNES/superpunchout.html'">Jugar</button>
+    </div>
+
+    <div class="card" data-consola="SNES">
+      <img src="../public/img_juegos/SNES/yoshis island.webp" alt="Yoshis Island">
+      <div class="titulo">Yoshi's Island</div>
+      <button onclick="window.location.href='../public/juegos/SNES/yoshisisland.html'">Jugar</button>
+    </div>
+
+    <div class="card" data-consola="N64">
+      <img src="../public/img_juegos/N64/zelda ocarina of time.jpg" alt="Zelda: Ocarina of Time">
+      <div class="titulo">Zelda: Ocarina of Time</div>
+      <button onclick="window.location.href='../public/juegos/N64/zeldacarinaoftime.html'">Jugar</button>
+    </div>
+
+    <div class="card" data-consola="N64">
+      <img src="../public/img_juegos/N64/conker.jpg" alt="Conker Bad Fur Day">
+      <div class="titulo">Conker Bad Fur Day</div>
+      <button onclick="window.location.href='../public/juegos/N64/conkerbadfurday.html'">Jugar</button>
+    </div>
+
+    <div class="card" data-consola="N64">
+      <img src="../public/img_juegos/N64/pokemon stadium.webp" alt="Pokémon Stadium">
+      <div class="titulo">Pokémon Stadium</div>
+      <button onclick="window.location.href='../public/juegos/N64/pokemonstadium.html'">Jugar</button>
+    </div>
+
+    <div class="card" data-consola="N64">
+      <img src="../public/img_juegos/N64/majoras mask.webp" alt="Zelda: Majora Mask">
+      <div class="titulo">Zelda: Majora's Mask</div>
+      <button onclick="window.location.href='../public/juegos/N64/zeldamajorasmask.html'">Jugar</button>
+    </div>
+
+    <div class="card" data-consola="N64">
+      <img src="../public/img_juegos/N64/super smash bros.jpg" alt="Super Smash Bros.">
+      <div class="titulo">Super Smash Bros.</div>
+      <button onclick="window.location.href='../public/juegos/N64/supersmashbros.html'">Jugar</button>
+    </div>
+
+    <div class="card" data-consola="N64">
+      <img src="../public/img_juegos/N64/mario kart 64.jpg" alt="Mario Kart 64">
+      <div class="titulo">Mario Kart 64</div>
+      <button onclick="window.location.href='../public/juegos/N64/mariokart64.html'">Jugar</button>
+    </div>
+
+    <div class="card" data-consola="N64">
+      <img src="../public/img_juegos/N64/banjo kazooie.jpg" alt="Banjo Kazooie">
+      <div class="titulo">Banjo Kazooie</div>
+      <button onclick="window.location.href='../public/juegos/N64/banjokazooie.html'">Jugar</button>
+    </div>
+
+    <div class="card" data-consola="N64">
+      <img src="../public/img_juegos/N64/goldeneye 007.jpg" alt="Goldeneye 007">
+      <div class="titulo">Goldeneye 007</div>
+      <button onclick="window.location.href='../public/juegos/N64/goldeneye007.html'">Jugar</button>
+    </div>
+
+    <div class="card" data-consola="N64">
+      <img src="../public/img_juegos/N64/donkey kong 64.jpg" alt="Donkey Kong 64">
+      <div class="titulo">Donkey Kong 64</div>
+      <button onclick="window.location.href='../public/juegos/N64/donkeykong64.html'">Jugar</button>
+    </div>
+
+    <div class="card" data-consola="N64">
+      <img src="../public/img_juegos/N64/super mario 64.webp" alt="Super Mario 64">
+      <div class="titulo">Super Mario 64</div>
+      <button onclick="window.location.href='../public/juegos/N64/supermario64.html'">Jugar</button>
+    </div>
+
+    <div class="card" data-consola="GBA">
+      <img src="../public/img_juegos/gba/mother 3.png" alt="Mother 3">
+      <div class="titulo">Mother 3</div>
+      <button onclick="window.location.href='../public/juegos/GBA/mother3.html'">Jugar</button>
+    </div>
+
+    <div class="card" data-consola="GBA">
+      <img src="../public/img_juegos/GBA/fire emblem.jpg" alt="Fire Emblem">
+      <div class="titulo">Fire Emblem</div>
+      <button onclick="window.location.href='../public/juegos/GBA/fireemblem.html'">Jugar</button>
+    </div>
+
+    <div class="card" data-consola="GBA">
+      <img src="../public/img_juegos/GBA/advance war.jpg" alt="Advance Wars">
+      <div class="titulo">Advance Wars</div>
+      <button onclick="window.location.href='../public/juegos/GBA/advancewars.html'">Jugar</button>
+    </div>
+
+    <div class="card" data-consola="GBA">
+      <img src="../public/img_juegos/GBA/mario & luigi.jpg" alt="Mario & Luigi Superstar Saga">
+      <div class="titulo">Mario & Luigi Superstar Saga</div>
+      <button onclick="window.location.href='../public/juegos/GBA/marioluigisuperstarsaga.html'">Jugar</button>
+    </div>
+
+    <div class="card" data-consola="GBA">
+      <img src="../public/img_juegos/GBA/kingdom hearts.jpg" alt="Kingdom Hearts">
+      <div class="titulo">Kingdom Hearts</div>
+      <button onclick="window.location.href='../public/juegos/GBA/kingdomhearts.html'">Jugar</button>
+    </div>
+
+    <div class="card" data-consola="GBA">
+      <img src="../public/img_juegos/GBA/kirby amazing mirror.jpg" alt="Kirby & the Amazing Mirror">
+      <div class="titulo">Kirby & the Amazing Mirror</div>
+      <button onclick="window.location.href='../public/juegos/GBA/kirbyamazingmirror.html'">Jugar</button>
+    </div>
+
+    <div class="card" data-consola="GBA">
+      <img src="../public/img_juegos/GBA/sonic advance.webp" alt="Sonic Advance">
+      <div class="titulo">Sonic Advance</div>
+      <button onclick="window.location.href='../public/juegos/GBA/sonicadvance.html'">Jugar</button>
+    </div>
+
+    <div class="card" data-consola="GBA">
+      <img src="../public/img_juegos/GBA/pokemon mystery dungeon.jpg" alt="Pokémon Mystery Dungeon">
+      <div class="titulo">Pokémon Mystery Dungeon</div>
+      <button onclick="window.location.href='../public/juegos/GBA/pokemonmysterydungeon.html'">Jugar</button>
+    </div>
+
+    <div class="card" data-consola="GBA">
+      <img src="../public/img_juegos/GBA/minish cap.jfif" alt="Zelda: Minish Cap">
+      <div class="titulo">Zelda: Minish Cap</div>
+      <button onclick="window.location.href='../public/juegos/GBA/zeldaminishcap.html'">Jugar</button>
+    </div>
+
+    <div class="card" data-consola="GBA">
+      <img src="../public/img_juegos/GBA/pokemon emerald.png" alt="Pokémon Emerald">
+      <div class="titulo">Pokémon Emerald</div>
+      <button onclick="window.location.href='../public/juegos/GBA/pokemonemerald.html'">Jugar</button>
+    </div>
+
+    <div class="card" data-consola="NES">
+      <img src="../public/img_juegos/NES/castlevania.webp" alt="Castlevania">
+      <div class="titulo">Castlevania</div>
+      <button onclick="window.location.href='../public/juegos/NES/castlevania.html'">Jugar</button>
+    </div>
+
+    <div class="card" data-consola="NES">
+      <img src="../public/img_juegos/NES/donkey kong.webp" alt="Donkey Kong">
+      <div class="titulo">Donkey Kong</div>
+      <button onclick="window.location.href='../public/juegos/NES/donkeykong.html'">Jugar</button>
+    </div>
+
+    <div class="card" data-consola="NES">
+      <img src="../public/img_juegos/NES/kid icarus.webp" alt="Kid Icarus">
+      <div class="titulo">Kid Icarus</div>
+      <button onclick="window.location.href='../public/juegos/NES/kidicarus.html'">Jugar</button>
+    </div>
+
+    <div class="card" data-consola="NES">
+      <img src="../public/img_juegos/NES/kirbys adventure.jpg" alt="Kirbys Adventure">
+      <div class="titulo">Kirby's Adventure</div>
+      <button onclick="window.location.href='../public/juegos/NES/kirbysadventure.html'">Jugar</button>
+    </div>
+
+    <div class="card" data-consola="NES">
+      <img src="../public/img_juegos/NES/metroid.webp" alt="Metroid">
+      <div class="titulo">Metroid</div>
+      <button onclick="window.location.href='../public/juegos/NES/metroid.html'">Jugar</button>
+    </div>
+
+    <div class="card" data-consola="NES">
+      <img src="../public/img_juegos/NES/punch-out.webp" alt="Punch-Out">
+      <div class="titulo">Punch-Out</div>
+      <button onclick="window.location.href='../public/juegos/NES/punchout.html'">Jugar</button>
+    </div>
+
+    <div class="card" data-consola="NES">
+      <img src="../public/img_juegos/Nes/super mario bros.jpeg" alt="Super Mario Bros.">
+      <div class="titulo">Super Mario Bros.</div>
+      <button onclick="window.location.href='../public/juegos/NES/supermariobros.html'">Jugar</button>
+    </div>
+
+    <div class="card" data-consola="NES">
+      <img src="../public/img_juegos/NES/super mario 2.png" alt="Super Mario Bros. 2">
+      <div class="titulo">Super Mario Bros. 2</div>
+      <button onclick="window.location.href='../public/juegos/NES/supermariobros2.html'">Jugar</button>
+    </div>
+
+    <div class="card" data-consola="NES">
+      <img src="../public/img_juegos/NES/super mario bros 3.webp" alt="Super Mario Bros. 3">
+      <div class="titulo">Super Mario Bros. 3</div>
+      <button onclick="window.location.href='../public/juegos/NES/supermariobros3.html'">Jugar</button>
+    </div>
+
+    <div class="card" data-consola="NES">
+      <img src="../public/img_juegos/NES/the legend of zelda.jpg" alt="The Legend of Zelda">
+      <div class="titulo">The Legend of Zelda</div>
+      <button onclick="window.location.href='../public/juegos/NES/thelegendofzelda.html'">Jugar</button>
+    </div>
+
+    <div class="card" data-consola="PS1">
+      <img src="../public/img_juegos/PS1/crash bandicoot.jpg" alt="Crash Bandicoot">
+      <div class="titulo">Crash Bandicoot</div>
+      <button onclick="window.location.href='../public/juegos/PS1/crashbandicoot.html'">Jugar</button>
+    </div>
+
+    <div class="card" data-consola="PS1">
+      <img src="../public/img_juegos/PS1/crash team racing.jpg" alt="Crash Team Racing">
+      <div class="titulo">Crash Team Racing</div>
+      <button onclick="window.location.href='../public/juegos/PS1/crashteamracing.html'">Jugar</button>
+    </div>
+
+    <div class="card" data-consola="PS1">
+      <img src="../public/img_juegos/PS1/dino crisis.jpg" alt="Dino Crisis">
+      <div class="titulo">Dino Crisis</div>
+      <button onclick="window.location.href='../public/juegos/PS1/dinocrisis.html'">Jugar</button>
+    </div>
+
+    <div class="card" data-consola="PS1">
+      <img src="../public/img_juegos/PS1/final fantasy.png" alt="Final Fantasy 7">
+      <div class="titulo">Final Fantasy</div>
+      <button onclick="window.location.href='../public/juegos/PS1/finalfantasy.html'">Jugar</button>
+    </div>
+
+    <div class="card" data-consola="PS1">
+      <img src="../public/img_juegos/PS1/gta.jpg" alt="Grand Theft Auto">
+      <div class="titulo">Grand Theft Auto</div>
+      <button onclick="window.location.href='../public/juegos/PS1/grandtheftauto.html'">Jugar</button>
+    </div>
+
+    <div class="card" data-consola="PS1">
+      <img src="../public/img_juegos/PS1/metal gear solid.jpg" alt="Metal Gear Solid">
+      <div class="titulo">Metal Gear Solid</div>
+      <button onclick="window.location.href='../public/juegos/PS1/metalgearsolid.html'">Jugar</button>
+    </div>
+
+    <div class="card" data-consola="PS1">
+      <img src="../public/img_juegos/PS1/mortal kombat.jpg" alt="Mortal Kombat">
+      <div class="titulo">Mortal Kombat 4</div>
+      <button onclick="window.location.href='../public/juegos/PS1/mortalkombat.html'">Jugar</button>
+    </div>
+
+    <div class="card" data-consola="PS1">
+      <img src="../public/img_juegos/PS1/pepsiman.jfif" alt="Pepsiman">
+      <div class="titulo">Pepsiman</div>
+      <button onclick="window.location.href='../public/juegos/PS1/pepsiman.html'">Jugar</button>
+    </div>
+
+    <div class="card" data-consola="PS1">
+      <img src="../public/img_juegos/PS1/resident evil.jpg" alt="Resident Evil 3">
+      <div class="titulo">Resident Evil 3</div>
+      <button onclick="window.location.href='../public/juegos/PS1/residentevil3.html'">Jugar</button>
+    </div>
+
+    <div class="card" data-consola="PS1">
+      <img src="../public/img_juegos/PS1/tekken.jpg" alt="Tekken">
+      <div class="titulo">Tekken</div>
+      <button onclick="window.location.href='../public/juegos/PS1/tekken.html'">Jugar</button>
+    </div>
+  </main>
+
+  <script>
+    // Función para ordenar las tarjetas de juegos
+    function ordenarJuegos(ascendente = true) {
+      const contenedor = document.getElementById('contenedor-juegos');
+      const tarjetas = Array.from(document.querySelectorAll('.card'));
+      
+      tarjetas.sort((a, b) => {
+        const tituloA = a.querySelector('.titulo').textContent.toLowerCase();
+        const tituloB = b.querySelector('.titulo').textContent.toLowerCase();
+        
+        if (ascendente) {
+          return tituloA.localeCompare(tituloB);
+        } else {
+          return tituloB.localeCompare(tituloA);
+        }
+      });
+      
+      // Limpiar el contenedor
+      while (contenedor.firstChild) {
+        contenedor.removeChild(contenedor.firstChild);
+      }
+      
+      // Añadir las tarjetas ordenadas
+      tarjetas.forEach(tarjeta => {
+        contenedor.appendChild(tarjeta);
+      });
+    }
+    
+    // Ordenar juegos al cargar la página (ascendente por defecto)
+    document.addEventListener('DOMContentLoaded', function() {
+      ordenarJuegos(true);
+      
+      // Configurar botones de ordenamiento
+      document.getElementById('ordenAlfabeticoAsc').addEventListener('click', function() {
+        document.getElementById('ordenAlfabeticoDesc').classList.remove('active');
+        this.classList.add('active');
+        ordenarJuegos(true);
+      });
+      
+      document.getElementById('ordenAlfabeticoDesc').addEventListener('click', function() {
+        document.getElementById('ordenAlfabeticoAsc').classList.remove('active');
+        this.classList.add('active');
+        ordenarJuegos(false);
+      });
+    });
+  </script>
+
+  <script>
+    const botones = document.querySelectorAll('#filtros button');
+    const tarjetas = document.querySelectorAll('.card');
+
+    botones.forEach(boton => {
+      boton.addEventListener('click', () => {
+        // Activar el botón actual
+        botones.forEach(b => b.classList.remove('active'));
+        boton.classList.add('active');
+
+        const filtro = boton.getAttribute('data-filtro');
+
+        tarjetas.forEach(card => {
+          const consola = card.getAttribute('data-consola');
+          if (filtro === "Todos" || consola === filtro) {
+            card.style.display = "block";
+          } else {
+            card.style.display = "none";
+          }
+        });
+        
+        // Mantener el orden actual después de filtrar
+        const ordenAscendente = document.getElementById('ordenAlfabeticoAsc').classList.contains('active');
+        ordenarJuegos(ordenAscendente);
+      });
+    });
+    
+    // Configurar el buscador para mantener el orden
+    const buscador = document.getElementById('buscador');
+    buscador.addEventListener('input', function() {
+      const textoBusqueda = this.value.toLowerCase();
+      
+      tarjetas.forEach(card => {
+        const titulo = card.querySelector('.titulo').textContent.toLowerCase();
+        if (titulo.includes(textoBusqueda)) {
+          card.style.display = "block";
+        } else {
+          card.style.display = "none";
+        }
+      });
+      
+      // Mantener el orden actual después de buscar
+      const ordenAscendente = document.getElementById('ordenAlfabeticoAsc').classList.contains('active');
+      ordenarJuegos(ordenAscendente);
+    });
+  </script>
+
+</body>
+</html>

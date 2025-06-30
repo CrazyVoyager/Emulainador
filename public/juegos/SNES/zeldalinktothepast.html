@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>EMULAINADOR</title>
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+    :root {
+      --bg: #1e1f26;
+      --panel: #2a2c33;
+      --accent-blue: #4a6a8a;
+      --accent-purple: #5f4a75;
+      --text-soft: #cccccb;
+      --radius: 12px;
+    }
+
+    body, html {
+      margin:0; padding:0;
+      height:100%;
+      background: var(--bg);
+      font-family: 'Press Start 2P', monospace;
+      color: var(--text-soft);
+      display:flex;
+      justify-content:center;
+      align-items:center;
+    }
+
+    .window {
+  background: radial-gradient(circle at top left, var(--panel), var(--bg));
+  border: 2px solid var(--accent-blue);
+  border-radius: var(--radius);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.7);
+  width: 100%;
+  max-width: 800px;
+  min-width: 600px; /* Ancho mínimo */
+  min-height: 500px; /* Altura mínima */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+    .title {
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding-bottom:10px;
+      border-bottom:1px solid var(--accent-purple);
+      font-size:1rem;
+    }
+
+    .title span {
+      font-size:0.7rem;
+      color: var(--accent-purple);
+    }
+
+    #game {
+      margin-top: 20px;
+      width:100%;
+      aspect-ratio:4/3;
+      background:black;
+      border:3px solid var(--accent-purple);
+      border-radius:8px;
+      box-shadow: inset 0 0 10px var(--accent-blue);
+    }
+
+    .footer {
+      margin-top:15px;
+      text-align:center;
+      font-size:0.6rem;
+      color: var(--accent-blue);
+    }
+
+    @media (max-width:600px) {
+      .title { font-size:0.8rem; flex-direction:column; }
+      .window { padding:15px; }
+    }
+
+    </style>
+</head>
+
+<body>
+  <div class="window">
+    <div class="title">
+      The Legend of Zelda: A Link to the Past
+    </div>
+    <div id="game"></div>
+    <div class="footer">EMULAINADOR</div>
+  </div>
+
+  <script>
+    EJS_player = "#game";
+    EJS_core = "snes";
+    EJS_gameName = "The Legend of Zelda: A Link to the Past";
+    EJS_color = "#4a6a8a";
+    EJS_pathtodata = "https://cdn.emulatorjs.org/stable/data/";
+    EJS_gameUrl = "https://corsproxy.io/?url=https://myrient.erista.me/files/No-Intro/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System/Legend%20of%20Zelda%2C%20The%20-%20A%20Link%20to%20the%20Past%20%28USA%29.zip";
+  </script>
+  <script src="https://cdn.emulatorjs.org/stable/data/loader.js"></script>
+</body>
+</html>

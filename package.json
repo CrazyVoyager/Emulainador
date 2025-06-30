@@ -1,0 +1,28 @@
+{
+  "name": "sismos-dashboard",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "express": "^4.21.2",
+    "mongoose": "^7.8.7"
+  },
+  "description": "Proyecto de ejemplo para la evaluación práctica de Express + Mongoose + MongoDB en Docker, con enfoque en el Teorema CAP.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://cmoralesucsc:glpat-YNizqiebP35dwt7URD9-@gitlab.com/ucsc-group/ecorp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/ucsc-group/ecorp/issues"
+  },
+  "homepage": "https://gitlab.com/ucsc-group/ecorp#readme",
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
