@@ -131,7 +131,7 @@ En el apartado `scripts` de tu `package.json` encontrarás:
 
 * **Express** para rutas REST y servir archivos estáticos.
 * **Mongoose** para modelar `Usuario` y `Juego`.
-* **Carga inicial de datos**: los usuarios se importan desde `models/usuarios.json`.
+* **Carga inicial de datos**: los usuarios se importan desde `models/Usuario.json`.
 * **Docker Compose** levanta MongoDB sin autenticación, exponiendo puerto 27017.
 
 ---
